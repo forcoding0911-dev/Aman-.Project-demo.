@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  * {
+    @apply border-charcoal/10;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-charcoal font-body antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display text-charcoal;
+  }
+
+  /* Visible, high-contrast focus ring for keyboard navigation — WCAG 2.1 AA */
+  :focus-visible {
+    outline: 3px solid #d97706;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background-color: #d97706;
+    color: #fdfbf7;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-container px-6 sm:px-8 lg:px-12;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-gold-700;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
