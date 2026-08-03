@@ -1,0 +1,6 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ghion Hotel emblem">
+  <circle cx="24" cy="24" r="23" fill="#064e3b" stroke="#d97706" stroke-width="1.5"/>
+  <path d="M12 27c4-9 12-13 24-13-3 9-11 15-24 13Z" fill="#fdfbf7"/>
+  <path d="M12 27c4-9 12-13 24-13" stroke="#d97706" stroke-width="1.2" fill="none"/>
+  <circle cx="24" cy="24" r="2" fill="#d97706"/>
+</svg>
